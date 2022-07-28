@@ -1,0 +1,71 @@
+﻿@model Learning_diary_Maria_Toivanen.Models.Topic
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="row">
+
+    <div class="col-4" , id="addtopic">
+        <h3>Add a new topic to your learning diary :</h3>
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Topic title:</label>
+                <input asp-for="Title" class="form-control" placeholder="e.g. Cat" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label">Topic description:</label>
+                <input asp-for="Description" class="form-control" placeholder="e.g. Cats are animals" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TimeToMaster" class="control-label">How many days does it take to master the topic?</label>
+                <input asp-for="TimeToMaster" class="form-control" placeholder="Time in days" />
+                <span asp-validation-for="TimeToMaster" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TimeSpent" class="control-label">How many days have you spent this far?</label>
+                <input asp-for="TimeSpent" class="form-control" placeholder="Time in days" />
+                <span asp-validation-for="TimeSpent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Source" class="control-label">What is the source of the topic information?</label>
+                <input asp-for="Source" class="form-control" placeholder="Write e.g. book/website name" />
+                <span asp-validation-for="Source" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartLearningDate" class="control-label">What day did you start learning the topic?</label>
+                <input asp-for="StartLearningDate" class="form-control" />
+                <span asp-validation-for="StartLearningDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompletionDate" class="control-label">What day did you finish or are going to finish studying the subject?</label>
+                <input asp-for="CompletionDate" class="form-control" />
+                <span asp-validation-for="CompletionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InProgress" class="control-label">Are you still in progress with the studies?</label><br />
+                <input type="checkbox" id="yes" name="yes" value="yes">
+                <label for="yes"> Yes</label><br>
+                <input type="checkbox" id="no" name="no" value="no">
+                <label for="no"> No</label><br>
+                <span asp-validation-for="InProgress" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+       <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+  
+

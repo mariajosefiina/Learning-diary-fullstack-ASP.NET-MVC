@@ -1,0 +1,223 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+
+    }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+#mainMenu {
+   margin: 10px;
+    width: 1300px;
+    color: red !important;
+
+}
+ol, ul {
+    list-style: none !important;
+    color: red;
+}
+#mainMenu li {
+    display: block;
+    width: 120px;
+  
+    float: left;
+    margin-left: 2px;
+    font-family: 'Schoolbell', cursive;
+    font-size: 25px !important;
+    list-style: none;
+   
+}
+
+#mainMenu a {
+    text-decoration: none;
+    color: red !important;
+}
+
+
+.navbar-brand {
+    font-family: 'Schoolbell', cursive;
+    font-size: 40px !important;
+    color: red !important;
+}
+
+h2 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 40px;
+    color: white;
+    padding-top: 5%;
+}
+
+h3, h1 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 30px;
+    color:red;
+}
+
+.row {
+    padding-bottom: 5%;
+}
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/5014182.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+#addtopic {
+    background-image: url('paper.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+input[type=search] {
+    font-family: 'Schoolbell', cursive;
+    color: black;
+}
+
+input[type=submit] {
+    background-color: #065e3e;
+    font-family: 'Schoolbell', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+#topiclist-blackboard {
+    background-image: url('board.png');
+    background-repeat: no-repeat;
+    background-size: 1086px 598px;
+    background-size: contain;
+    color: white;
+    padding-left: 10%;
+   background-position: top;
+}
+
+.custom-button {
+    font-family: 'Schoolbell', cursive;
+    font-size: 25px;
+    background-color: #065e3e;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+
+.custom-button:hover {
+    background-color: #3e8e41
+}
+
+.custom-button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#contact-button {
+   
+    margin: 0 auto;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+
+}
+
+.table {
+    background-image: url('paper.jpg');
+    background-color: yellow;
+    margin-top: 30px;
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    display:none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #065e3e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 450px;
+    height: 300px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width:30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display:block;
+}
+
+.popup.active .content {
+    transition: all 400ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
