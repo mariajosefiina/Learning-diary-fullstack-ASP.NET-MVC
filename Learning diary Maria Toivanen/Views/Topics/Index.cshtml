@@ -4,9 +4,10 @@
 
 @{ ViewData["Title"] = "Index"; }
 
-
+         
 <table class="table">
     <thead>
+    
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Title)
@@ -72,7 +73,9 @@
             </tr>
         }
     </tbody>
+    
 </table>
+            
 
-<button type="button" class="custom-button" id="contact-button"> <a asp-action="Create">Create New</a></button>
+<button type="button" class="custom-button" id="contact-button" onclick= "window.location.href='https://localhost:44366/Topics/Create';")>Create New</></button>
 
