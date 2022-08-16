@@ -99,7 +99,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#addtopic {
+#deleteForm {
+    background-color: rgba(242, 232, 194, 0.43) !important;
+    
+}
+    #addtopic{
     background-image: url('paper.jpg');
     background-repeat: repeat;
     background-size: contain;
@@ -127,11 +131,11 @@ input[type=submit] {
 #topiclist-blackboard {
     background-image: url('board.png');
     background-repeat: no-repeat;
-    background-size: 1086px 598px;
     background-size: contain;
     color: white;
     padding-left: 10%;
    background-position: top;
+
 }
 
 .custom-button {
