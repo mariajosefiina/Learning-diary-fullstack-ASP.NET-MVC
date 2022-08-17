@@ -132,10 +132,17 @@ input[type=submit] {
     background-image: url('board.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: top;
     color: white;
-    padding-left: 10%;
-   background-position: top;
+    padding-left: 3%;
+}
 
+#topiclist {
+    background-image: url('largepaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-size: x-small;
 }
 
 .custom-button {
